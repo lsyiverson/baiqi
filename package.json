@@ -1,0 +1,25 @@
+{
+  "name": "baiqi",
+  "version": "1.0.0",
+  "description": "A front-end template",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsyiverson/baiqi.git"
+  },
+  "author": "lsyiverson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsyiverson/baiqi/issues"
+  },
+  "homepage": "https://github.com/lsyiverson/baiqi#readme"
+}
