@@ -1,6 +1,20 @@
-import gulp from "gulp"
-import gUtil from "gulp-util"
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import requireDir from 'require-dir';
+import runSequence from 'run-sequence';
+import gulpConfig from './gulpConfig';
 
-gulp.task("default", function () {
-  gUtil.log(gUtil.colors.green("default task"))
-})
+requireDir('./tasks', {recurse: true});
+
+gulpConfig(gulp);
+
+gulp.config('root.src', 'src');
+gulp.config('root.dist', 'dist');
+
+gulp.task('dev', ()=> {
+  runSequence('demo');
+});
+
+gulp.task('default', ()=> {
+  gutil.log(gutil.colors.green('default task'));
+});
