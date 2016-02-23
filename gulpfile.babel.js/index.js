@@ -12,7 +12,11 @@ gulp.config('root.src', 'src');
 gulp.config('root.dist', 'dist');
 
 gulp.task('dev', ()=> {
-  runSequence('demo');
+  runSequence(
+    'clean',
+    'demo',
+    'symlink'
+  );
 });
 
 gulp.task('default', ()=> {
