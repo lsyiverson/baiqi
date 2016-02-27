@@ -15,7 +15,8 @@ gulp.task('dev', ()=> {
   runSequence(
     'clean',
     'demo',
-    'symlink'
+    'symlink',
+    'processHtml'
   );
 });
 
