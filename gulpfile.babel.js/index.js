@@ -14,9 +14,9 @@ gulp.config('root.dist', 'dist');
 gulp.task('dev', ()=> {
   runSequence(
     'clean',
-    'demo',
     'symlink',
-    'processHtml'
+    'processHtml',
+    'webpack'
   );
 });
 
