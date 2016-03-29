@@ -1,1 +1,1 @@
-require('./app.jsx')(document.body);
+require('./app.jsx')(document.getElementById('appRoot'));
